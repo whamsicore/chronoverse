@@ -1,0 +1,5 @@
+---
+deployment: 
+    tasks:
+        - export DEPLOYPATH=/home/karmas6/public_html/chrono.com
+        - /bin/cp index.html $DEPLOYPATH
