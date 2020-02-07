@@ -1,0 +1,74 @@
+
+html, body
+{
+    height: 100%;
+}
+
+body {
+	margin: 0;
+	background-color: #111;
+}
+
+.cont.shy {
+	display: none;
+}
+
+.heading {
+	margin: 0;
+	text-align: center;
+	font-size: 65px;
+	padding: 25px 40px;
+	font-family: 'Lalezar', cursive;
+}
+
+#cont {
+	height: 100%;
+	/*min-height:100%;*/
+}
+
+#trailer {
+	/*padding-top: 85px;*/
+	text-align: center;
+}
+
+#trailer .heading {
+	
+	background-color: #061927;
+	color: #2b8a9f;
+	/*font-weight: normal;*/
+}
+
+#about {
+	/*opacity: 0;*/
+	color: #061927;
+}
+
+#about .heading {
+	background-color: #2b8a9f;
+	text-align: center;
+	padding: 20px 0;
+}
+
+#about .content {
+	background-color: #222;
+	color: #2b8a9f;
+}
+
+#about .content div {
+	padding: 20px;
+}
+
+#sakula .heading {
+	background-color: #061927;
+	color: #2b8a9f;
+}
+
+#sakula .content {
+	background-color: #222;
+	color: #2b8a9f;
+}
+
+#sakula .content div {
+	padding: 20px;
+}
+
