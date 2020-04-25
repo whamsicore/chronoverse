@@ -25,14 +25,8 @@ $(document).ready(function() {
 
 });
 
-$(window).mouseup(function(){
-	log("@mouseup")
-});
-
 // func: when window size changes
 $(window).resize(function() {
-	// log("window size changed!");
-
 	resizeContainers();
 });
 
@@ -62,13 +56,14 @@ function resizeContainers() {
 
 } // resizeContainers()
 
-var timer;
-$(window).bind('scroll',function () {
-    clearTimeout(timer);
-    timer = setTimeout( refresh , 500 );
-});
+// note: deactivated.
+// var timer;
+// $(window).bind('scroll',function () {
+//     clearTimeout(timer);
+//     timer = setTimeout( snapToPos , 200 );
+// });
 
-var refresh = function () { 
+var snapToPos = function () { 
     // scroll to the closest top. 
     var curScrollTop = $(window).scrollTop();
 
@@ -81,7 +76,7 @@ var refresh = function () {
     var targetPosId = arrayOfPosDiff.indexOf(Math.min.apply(null, arrayOfPosDiff));
     var targetPos = $(".cont[pos='"+targetPosId+"']").offset().top;
 
-    $('html').animate({scrollTop: targetPos}, 500);
+    $('html').animate({scrollTop: targetPos}, 125);
 };
 
 
