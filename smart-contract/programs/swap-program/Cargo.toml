@@ -1,0 +1,22 @@
+[package]
+name = "swap_program"
+description = "An AMM for NFT swapping."
+edition = "2021"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "swap_program"
+
+[features]
+cpi = ["no-entrypoint"]
+default = []
+no-entrypoint = []
+no-idl = []
+
+[dependencies]
+metaplex-token-metadata = { version = "0.0.1", features = ["no-entrypoint"] }
+anchor-lang = { version="0.22.0", features = ["init-if-needed"] }
+anchor-spl = {version = "0.22.0"}
+spl-token = {version = "3.3.0", features = ["no-entrypoint"]}
+swap_helpers = {path='lib/swap_helpers'}

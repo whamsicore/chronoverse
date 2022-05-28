@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.localnet]
+swap_program = "D5a8ju8qVFo6sVL2ShKZ5Bf4HQySmLX76RQ1TTaKgyRH"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/paytonlee/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
